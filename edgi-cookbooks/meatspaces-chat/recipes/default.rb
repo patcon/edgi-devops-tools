@@ -25,11 +25,13 @@ package 'python'
 include_recipe 'build-essential'
 execute 'yarn install' do
   cwd install_path
+  environment 'PATH' => "/usr/local/nodejs-binary-4.8.3/bin:#{ENV['PATH']}"
 end
 
 nodejs_npm 'gulp'
 execute 'gulp css js static' do
   cwd install_path
+  environment 'PATH' => "/usr/local/nodejs-binary-4.8.3/bin:#{ENV['PATH']}"
 end
 
 file "#{install_path}/local.json" do
