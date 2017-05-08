@@ -1,0 +1,44 @@
+DEPENDENCIES
+  build-essential
+  chef_nginx
+  git
+  nodejs
+    git: https://github.com/redguide/nodejs.git
+    revision: f79dfc74d6fcc4e44aa235ad83934a1b5ed10b8b
+  pleaserun
+
+GRAPH
+  ark (3.1.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (8.0.2)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef_nginx (6.0.2)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 12.16.3)
+    ohai (>= 4.1.0)
+    yum-epel (>= 0.0.0)
+    zypper (>= 0.0.0)
+  compat_resource (12.19.0)
+  dmg (4.0.0)
+  git (6.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  mingw (2.0.1)
+    seven_zip (>= 0.0.0)
+  nodejs (3.0.1)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 12.16.0)
+  ohai (5.1.0)
+  pleaserun (0.1.1)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  windows (3.0.5)
+    ohai (>= 4.0.0)
+  yum-epel (2.1.1)
+    compat_resource (>= 12.16.3)
+  zypper (0.4.0)
